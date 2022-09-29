@@ -13,7 +13,7 @@ export class RecipeListComponent implements OnInit {
     new Recipe('A test Recipe', 
     'This is simply a test', 
     'https://img.taste.com.au/nyBI7B1_/taste/2017/08/steak-with-mushroom-sauce-129161-2.jpg'),
-    new Recipe('A test Recipe', 
+    new Recipe('Another test Recipe', 
     'This is simply a test', 
     'https://img.taste.com.au/nyBI7B1_/taste/2017/08/steak-with-mushroom-sauce-129161-2.jpg')
   ];
