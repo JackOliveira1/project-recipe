@@ -2,7 +2,6 @@
     <div class="col-md-5">
         <app-recipe-list></app-recipe-list>
     </div>
-
     <div class="col-md-7">
         <app-recipe-detail
         *ngIf="selectedRecipe; else infoText"
@@ -10,6 +9,5 @@
         <ng-template #infoText>
             <p>Por favor selecione a receita</p>
         </ng-template>
-    </div>  
-    
+    </div>
 </div>

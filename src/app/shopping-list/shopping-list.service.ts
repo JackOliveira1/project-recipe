@@ -18,11 +18,8 @@ export class ShoppingListService {
         
     }
 
-    addIngredients(ingredient: Ingredient[]){
-        // for(let ingredient of this.ingredients){
-        //     this.addIngredient(ingredient);
-        // }
-        this.ingredients.push(...this.ingredients)
-        this.ingredientsChanged.emit(this.ingredients.slice())
+    addIngredients(ingredients: Ingredient[]){
+        this.ingredients.push(...ingredients);
+        this.ingredientsChanged.emit(this.ingredients.slice());
     }
 }
