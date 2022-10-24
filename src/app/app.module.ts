@@ -31,6 +31,7 @@ import {    RecipeEditComponent   } from './recipes/recipe-edit/recipe-edit.comp
     DropdownDirective,
     RecipeStarComponent,
     RecipeEditComponent
+    
   ],
   imports: [
     BrowserModule,
