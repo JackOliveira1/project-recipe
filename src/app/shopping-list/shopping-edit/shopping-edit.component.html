@@ -1,14 +1,14 @@
 <div class="row">
     <div class="col-xs-12">
-        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <form (ngSubmit)="onAddItem(f)" #f="ngForm">
             <div class="row">
                 <div class="col-sm-5 form-group">
                     <label for="name">Name</label>
                     <input 
                         type="text" 
                         id="name" 
-                        class="form-control"
                         name="name"
+                        class="form-control"
                         ngModel
                         required>
                 </div>
@@ -17,21 +17,31 @@
                     <input 
                         type="number" 
                         id="amount"
-                        class="form-control"
                         name="amount"
+                        class="form-control"
                         ngModel
                         required
                         pattern="^[1-9]+[0-9]*$">
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <button class="btn btn-success" type="submit" [disabled]="!f.valid">{{editMode ? 'Update' :'add'}}</button>
                         <button 
-                        class="btn btn-danger" 
-                        type="button"
-                        (click)="onDelete()"
-                        *ngIf="editMode">Remove</button>
-                        <button class="btn btn-info" type="button" (click)="onClear()">Clear</button>
+                            class="btn btn-success" 
+                            type="submit" 
+                            [disabled]="!f.valid"
+                            >{{editMode ? 'Update' :'add'}}
+                        </button>
+                        <button 
+                            class="btn btn-danger" 
+                            type="button"
+                            (click)="onDelete()"
+                            *ngIf="editMode">Remove
+                        </button>
+                        <button 
+                            class="btn btn-info" 
+                            type="button" 
+                            (click)="onClear()">Clear
+                        </button>
                     </div>
                 </div>
             </div>
